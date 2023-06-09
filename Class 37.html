@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+
+<head></head>
+
+<body>
+
+<h1><center>Class 39-Validation, Errors and Debugging</center></h1>
+
+<h2>Form Validation</h2>
+
+<form>
+
+First Name:
+<input type="text">
+<br><br>
+Last Name:
+<input type="text">
+<br><br>
+Age:
+<input type="number">
+<br><br>
+Email
+<input type="email">
+
+<p>Please enter a number between 1-10.</p>
+
+<input id="number">
+
+<button type="button" onclick="validate">
+submit
+</button>
+
+<p id="message">
+</p>
+
+</form>
+
+<script>
+function validate(){
+var a,b
+a=document.getElementById("number").value
+if(a>0 && a<11)
+{
+b="input is correct"
+}
+{
+b="input is incorrect"
+}
+document.getElementById("message").innerHTML=b
+}
+
+</script>
+
+
+</body>
+
+
+
+</html>
+
+<!--JS Errors:
+Explain the student logical and syntax errors.
+Syntax Errors
+Syntax errors, also called parsing errors, occur at compile time in 
+traditional programming languages and at interpret time in 
+JavaScript.
+
+Logical Errors
+Logic errors can be the most difficult type of errors to track down.
+These errors are not the result of a syntax or runtime error. 
+Instead, they occur when you make a mistake in the logic that 
+drives your script and you do not get the result you expected.-->
+
+<!--Code Debugging
+Your code might contain syntax errors, or logical errors.
+Often, when programming code contains errors, nothing will 
+happen. There are no error messages, and you will get no 
+indications where to search for errors.
+Searching for (and fixing) errors in programming code is called 
+code debugging.
+One simple method that student will try is of console.log() to 
+display JavaScript values in the debugger window:-->

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<style>
+div.a{width:250px;
+height:200px;
+background-color: aquamarine;
+animation-duration:5s;
+animation-iteration-count:10s;
+animation-name:colorchange;
+}
+@keyframes colorchange{
+from{background-color:aquamarine;}
+to{background-color:chartreuse}
+}
+
+div.b{width:250px;
+height:200px;
+background-color: chartreuse;
+animation-duration:5s;
+animation-iteration-count:10s;
+border-radius: 100%;
+animation-name: c_change;
+}
+@keyframes c_change{
+0% {background-color: chartreuse}
+25% {background-color: aqua;}
+50% {background-color: sandybrown;}
+75% {background-color: chartreuse;}
+100% {background-color: yellow;}
+}
+
+div.c{
+width:100px; 
+height:100px;
+background-color:gold);
+animation-duration:8s;
+animation-iteration-count:5;
+position:relative;
+animation-name:p_change;
+}
+
+@keyframes p_change{
+0% {left:0px; top:0px; }
+25% {left:200px; top:0px; }
+50% {left:200px; top:200px; }
+75% {left:0px; top:200px; }
+100% {left:0px; top:0px;}
+}
+
+</style>
+
+</head>
+
+<body style="background:linear-gradient(to right,magenta,yellow,aquamarine)">
+
+<h1><center>Animation</center></h1>
+
+<div class="a">
+
+</div>
+
+<div class="b">
+
+</div>
+
+<div class="c">
+
+</div>
+
+</body>
+
+</html>

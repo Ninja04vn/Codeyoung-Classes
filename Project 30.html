@@ -1,0 +1,49 @@
+<!-- refer to class 30 a, b and c and create a sampla amazon webpage with alert submit and zoom images  -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head></head>
+
+<body style="background:linear-gradient(to right,chartreuse,yellow,aquamarine)">
+
+<h1><b><center>Yu-Gi-Oh Decks</b></center></h1>
+
+<img src="https://m.media-amazon.com/images/I/61B-WOsrP5L._AC_UL640_FMwebp_QL65_.jpg" width="650px" height="850px" 
+onload="YuGiOh()" onmouseover="Zoom(this)" 
+onmouseout="Normal(this)">
+
+<script>
+function YuGiOh() {
+alert("image uploaded")
+}
+</script>
+
+<form onsubmit="Yugioh">
+
+Name:
+
+<input type="text">
+<br><br>
+
+<input type="submit">
+
+</form>
+
+<script>
+function Zoom(x){
+x.style.width="750px";
+x.style.height="950px"
+}
+
+function Normal(x){
+x.style.width="650px";
+x.style.height="850px"
+}
+
+</script>
+
+</body>
+
+</html>
